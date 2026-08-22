@@ -1,0 +1,100 @@
+# ==========================
+# Dependencies
+# ==========================
+node_modules/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Build Output
+# ==========================
+dist/
+build/
+coverage/
+
+# ==========================
+# Logs
+# ==========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================
+# Cache
+# ==========================
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+*.tsbuildinfo
+
+# ==========================
+# Runtime Files
+# ==========================
+*.pid
+*.seed
+*.pid.lock
+
+# ==========================
+# Temporary Files
+# ==========================
+tmp/
+temp/
+*.tmp
+
+# ==========================
+# Uploads
+# ==========================
+uploads/
+public/uploads/
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================
+# VS Code / IDE
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# Deployment
+# ==========================
+.vercel/
+.netlify/
+
+# ==========================
+# MongoDB Dumps
+# ==========================
+dump/
+
+# ==========================
+# Certificates / Keys
+# ==========================
+*.pem
+*.key
+*.crt
+
+# ==========================
+# Miscellaneous
+# ==========================
+*.bak
+*.old
+*.orig
+
+# Keep empty folders
+!.gitkeep

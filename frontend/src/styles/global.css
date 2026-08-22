@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-blue: #0ef;
+  --color-dark-bg: #081b29;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #ededed;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.shadow-neon {
+  box-shadow: 0 0 10px var(--color-neon-blue);
+}
+.hover-shadow-neon:hover {
+  box-shadow: 0 0 5px orange, 0 0 25px white, 0 0 50px green, 0 0 100px cyan;
+  color: orange !important;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-dark-bg); }
+::-webkit-scrollbar-thumb { background: linear-gradient(transparent, var(--color-neon-blue)); border-radius: 10px; }
+
+/* --- SMOOTH FADE-IN ANIMATION FOR NO-FLICKER UI LOAD --- */
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fadeInSmooth {
+  animation: fadeInSmooth 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
